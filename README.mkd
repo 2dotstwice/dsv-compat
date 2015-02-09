@@ -1,0 +1,19 @@
+Generates a variety of files with Delimiter-separated-values which can be used
+to test support for them in software like OpenOffice.org, Microsoft Office,
+Google Spreadsheets, ...
+
+# Installation
+
+```
+composer install
+```
+
+# Usage
+
+Generate the delimiter-separated-values files with
+
+```
+./generator.php
+```
+
+Afterwards you will find them in the _files_ directory.

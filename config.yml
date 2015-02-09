@@ -1,0 +1,57 @@
+utf8-semicolon.csv: {}
+
+utf8-bom-semicolon.csv:
+  bom: true
+
+utf8-bom-semicolon-excelheader.csv:
+  bom: true
+  excelheader: true
+
+utf16-semicolon.csv:
+  charset: UTF-16LE
+
+utf16-bom-semicolon.csv:
+  charset: UTF-16LE
+  bom: true
+
+utf16-bom-comma.csv:
+  charset: UTF-16LE
+  bom: true
+  delimiter: ","
+
+utf16-bom-semicolon-excelheader.csv:
+  charset: UTF-16LE
+  bom: true
+  excelheader: true
+
+utf16-tab.csv:
+  charset: UTF-16LE
+  delimiter: "\t"
+
+utf16-bom-tab.csv:
+  charset: UTF-16LE
+  bom: true
+  delimiter: "\t"
+
+cp1252-semicolon-excelheader.csv:
+  charset: CP1252
+  excelheader: true
+
+cp1252-semicolon.csv:
+  charset: CP1252
+
+iso-88591-1-semicolon.csv:
+  charset: ISO-8859-1
+
+iso-88591-1-semicolon-excelheader.csv:
+  charset: ISO-8859-1
+  excelheader: true
+
+iso-88591-1-comma.csv:
+  charset: ISO-8859-1
+  delimiter: ","
+
+iso-88591-1-comma-excelheader.csv:
+  charset: ISO-8859-1
+  delimiter: ","
+  excelheader: true
