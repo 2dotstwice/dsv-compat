@@ -17,6 +17,7 @@ foreach ($config as $fileName => $fileConfig) {
         'charset' => 'UTF-8',
         'bom' => false,
         'excelheader' => false,
+        'value-newline' => "\r",
     ];
 
     $filePath = 'files/' . $fileName;
@@ -57,15 +58,17 @@ foreach ($config as $fileName => $fileConfig) {
         $file->fwrite($fileConfig['newline']);
     }
 
+    $newLine = $fileConfig['value-newline'];
+
     $data = [
         [
             "Café",
-            "Tervuursesteenweg\r3000 Leuven\rBelgium",
+            "Tervuursesteenweg{$newLine}3000 Leuven{$newLine}Belgium",
             "Test 123"
         ],
         [
             "Immobiliën",
-            "Parijsstraat\r3000 Leuven\rBelgië",
+            "Parijsstraat{$newLine}3000 Leuven{$newLine}België",
             "Test 123"
         ],
     ];

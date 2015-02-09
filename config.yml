@@ -55,3 +55,22 @@ iso-88591-1-comma-excelheader.csv:
   charset: ISO-8859-1
   delimiter: ","
   excelheader: true
+
+utf16-bom-tab-wineol.csv:
+  charset: UTF-16LE
+  bom: true
+  delimiter: "\t"
+  value-newline: "\r\n"
+
+utf16-bom-tab-wineol-everywhere.csv:
+  charset: UTF-16LE
+  bom: true
+  delimiter: "\t"
+  newline: "\r\n"
+  value-newline: "\r\n"
+
+utf16-bom-tab-unixeol.csv:
+  charset: UTF-16LE
+  bom: true
+  delimiter: "\t"
+  value-newline: "\n"
